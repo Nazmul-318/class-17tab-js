@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --shadow-1 : 0 .125rem .25rem rgba(0,0,0,.075);
+    --shadow-2 : 0 .5rem  1rem rgba(0,0,0,.15);
+    --shadow-3 : 0 1rem 3rem rgba(0,0,0,.175);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+html{
+    font-family: poppins;
+}
+body{   
+   background-image: url(./Img/pexels-photo-255464.jpeg);
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.huda_tab{
+    width: 600px;
+    margin: 100px auto 0;
+    background-color: #ddd;
+    padding: 20px;
+    box-shadow: var(--shadow-3);
+    /* padding-top: 20px; */
+}
+.huda_tab ul {
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+.huda_tab ul li {
+    display: block;
+    background-color: #999;
+    width: 19%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 2px 1px;
+}
+.huda_tab ul li a {
+    display: block;
+    color: rgb(173, 21, 21);
+    border-bottom: 1px solid #ccc;
+}
+.huda_tab ul li a.active {
+    border-bottom: none;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-radius: 5px 5px 0 0 ;
+}
+.tab_pane {
+    display: none;
+}
+.tab_pane.active {
+    display: block;
+}
+#home {
+    background-color: thistle;
+    padding: 20px;
+    
+}
+#about {
+    background-color: turquoise;
+    padding: 20px;
+}
